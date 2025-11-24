@@ -21,6 +21,9 @@ function sort(numbers){
 sendNumbers.addEventListener("click",function (event) {
     
     event.preventDefault();
+    if (showResult.lastElementChild) {
+    showResult.lastElementChild.remove();
+}
     let arr = [num1.value,num2.value,num3.value]
     showResult.insertAdjacentHTML("beforeend",sort(arr))
 
