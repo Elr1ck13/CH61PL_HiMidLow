@@ -13,19 +13,19 @@
 
     <div class="numform">
         <form>
-            <legend>Por favor ingresa 3 numeros en los siguientes recuadros</legend>
+            <legend class="text-center">Por favor ingresa 3 numeros en los siguientes recuadros</legend>
             <div class="form-group">
                 <label for="number1">Numero 1</label>
                 <input type="number" class="form-control" id="number1" aria-describedby="num1"
                     placeholder="Ingrese numero">
-               
+
             </div>
             <div class="form-group">
 
                 <label for="number2">Numero 2</label>
                 <input type="number" class="form-control" id="number2" aria-describedby="num2"
                     placeholder="Ingrese numero">
-                
+
             </div>
             <div class="form-group">
 
@@ -35,15 +35,17 @@
                 <small id="num3" class="form-text text-muted">Favor de solo ingresar números</small>
             </div>
 
-            <button type="submit" class="btn btn-primary">Ordenar</button>
+            <button id="sendNumbers" class="btn btn-primary">Ordenar</button>
+
+            <div id="showResult">
+                <p class="text-center"> <strong> </strong></p>
+            </div>
+
         </form>
 
 
     </div>
 
-    <div >
-        <p id="showResult"></p>
-    </div>
 
 
 </head>
